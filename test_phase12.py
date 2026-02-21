@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Sem3D test script: run tokenizer on example text + TinyStories."""
 
-from sem3d_tokenizer import TagQualityTokenizer
+from sem3d_tokenizer import Sem3DTokenizer
 
 def run_test(tokenizer, name, text):
     """Run encode/decode on text, verify lossless, return formatted output."""
@@ -56,7 +56,7 @@ def run_test(tokenizer, name, text):
 
 
 def main():
-    tokenizer = TagQualityTokenizer()
+    tokenizer = Sem3DTokenizer()
     results = []
     all_pass = True
 

@@ -3,14 +3,14 @@
 
 import time
 import sys
-from sem3d_tokenizer import TagQualityTokenizer
+from sem3d_tokenizer import Sem3DTokenizer
 
 CHUNK_SIZE = 10_000  # chars per chunk — split on sentence boundaries
 DATA_PATH = "data/tiny_stories_100m"
 
 
 def main():
-    tokenizer = TagQualityTokenizer()
+    tokenizer = Sem3DTokenizer()
 
     total_chars = 0
     total_coords = 0

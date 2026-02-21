@@ -241,7 +241,7 @@ DESTINATION_PREPS = {"to", "into", "through", "toward", "towards"}
 LOCATION_LABELS = {"GPE", "LOC", "FAC"}
 
 
-class TagQualityTokenizer:
+class Sem3DTokenizer:
     def __init__(self):
         self.nlp = spacy.load("en_core_web_sm")
 
@@ -1027,7 +1027,7 @@ class CodeTokenizer:
 
 
 if __name__ == "__main__":
-    tokenizer = TagQualityTokenizer()
+    tokenizer = Sem3DTokenizer()
 
     example = "Ben was walking through the store when he came across a very special vase. When Ben saw it he was amazed! He said, 'Wow, that is a really amazing vase!'"
 

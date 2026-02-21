@@ -28,9 +28,9 @@ The coordinate stream roundtrips losslessly back to the original text.
 The `Vocab` class flattens the 2D coordinate stream into a single integer token sequence (16,384 vocab size) for use with standard language models:
 
 ```python
-from sem3d_tokenizer import TagQualityTokenizer, Vocab
+from sem3d_tokenizer import Sem3DTokenizer, Vocab
 
-tok = TagQualityTokenizer()
+tok = Sem3DTokenizer()
 tag_dict, stream = tok.encode("Ben walked to the store.")
 
 vocab = Vocab.build([stream])
